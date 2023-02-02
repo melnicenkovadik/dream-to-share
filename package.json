@@ -1,0 +1,27 @@
+{
+  "name": "next-intl",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.14",
+    "@types/react": "^17.0.39",
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.10",
+    "typescript": "^4.5.5"
+  }
+}
