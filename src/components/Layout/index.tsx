@@ -19,9 +19,9 @@ export default function Layout({
   desc,
   thumb,
 }: Props) {
-  const description = desc || 'A Next.js multilingual site';
-  const thumbnail = thumb || '/img/default-thumb.png';
   const { t, } = useTranslation();
+  const description = desc || '';
+  const thumbnail = thumb || t('siteName');
 
   return (
     <main className={className}>
