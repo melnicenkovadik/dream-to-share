@@ -12,7 +12,7 @@ export default function Logo({ link }: Props) {
   return (
     <Link href={href}>
       <a className="logo">
-        <img src="/img/logo.jpg" alt="logo" />
+        <img src="/svg/logo.svg" alt="logo" />
           <p>{t('siteName')}</p>
       </a>
 
