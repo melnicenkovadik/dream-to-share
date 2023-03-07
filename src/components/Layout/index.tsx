@@ -8,7 +8,7 @@ type Props = {
   className?: string;
   children: React.ReactNode;
   desc?: string;
-  title: string;
+  title?: string;
   thumb?: string;
 };
 

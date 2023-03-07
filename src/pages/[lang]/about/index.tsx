@@ -13,7 +13,6 @@ export default function About({locale}: AboutProps) {
     const {t} = useTranslation();
     return (
 
-        <Layout title={'AboutPage'}>
             <section className="hero">
                 <div className="message">
                     <h1>{t('about')} {locale}</h1>
@@ -22,7 +21,6 @@ export default function About({locale}: AboutProps) {
                     </Link>
                 </div>
             </section>
-        </Layout>
     );
 }
 

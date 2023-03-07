@@ -1,0 +1,49 @@
+$breakpoints: (
+        'phone': '(max-width: 767px)',
+        'phone-tablet': '(min-width: 768px) and (max-width: 1036px)',
+        'tablet-large': '(min-width: 1036px)',
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (#{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else {
+    @error 'Invalid breakpoint: #{$breakpoint}';
+  }
+}
+
+@mixin small {
+  @include breakpoint('phone') {
+    @content;
+  }
+}
+
+@mixin medium {
+  @include breakpoint('phone-tablet') {
+    @content;
+  }
+}
+
+@mixin large {
+  @include breakpoint('tablet-large') {
+    @content;
+  }
+}
+
+// Usage
+// .footer p {
+//   margin: 0 0 2em;
+
+//   @include breakpoint('small') {
+//     margin: 0;
+//   }
+// }
+
+// .footer p {
+//   margin: 0 0 2em;
+
+//   @include small {
+//     margin: 0;
+//   }
